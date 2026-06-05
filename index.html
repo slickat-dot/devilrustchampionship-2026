@@ -119,13 +119,11 @@ function brc(){
   if(race.s2.length){h+='<div class="seg">Resultado S2</div>';race.s2.forEach((x,i)=>{h+='<div class="rr"><div class="rpos '+pc(i+1)+'">'+(i+1)+'</div><div class="rn">'+x.pilot+'</div><div class="rpt">'+x.pts+' pts</div></div>'})}
   if(race.f1.length){
     h+='<div class="seg">Final 1</div>';
-    let p=1;
-    race.f1.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
+    let p=1;race.f1.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
   }
   if(race.f2.length){
     h+='<div class="seg">Final 2</div>';
-    let p=race.f2_offset+1;
-    race.f2.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
+    let p=race.f2_offset+1;race.f2.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
   }
   if(race.penalties&&race.penalties.length){h+='<div class="seg pen">⚑  Penalización</div>';race.penalties.forEach(p=>{h+='<div class="rr penrow"><div class="rpos dim">⚑</div><div class="di"><div class="rn">'+p.pilot+'<span class="pen-tag">-'+p.pts+' pts</span></div><span class="pen-obs">'+p.obs+'</span></div></div>'})}
   document.getElementById('rc').innerHTML=h;
