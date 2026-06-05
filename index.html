@@ -101,81 +101,39 @@ body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;min-
   </section>
 </main>
 <script>
-const D={"standings": [{"pos": 1, "name": "Juli Siricman", "pts": 128, "team": "Manthey Rennen RC"}, {"pos": 2, "name": "Daro Gaig", "pts": 105, "team": "Turbio Works"}, {"pos": 3, "name": "Dani Vaquero", "pts": 96, "team": "Manthey Rennen RC"}, {"pos": 4, "name": "Franco Atienza", "pts": 83, "team": "Turbio Works"}, {"pos": 5, "name": "Roy Rigonat", "pts": 80, "team": "Rigonat Racing"}, {"pos": 6, "name": "Oscar Fernandez", "pts": 60, "team": "Rigonat Racing"}, {"pos": 7, "name": "Lucas Lumby", "pts": 30, "team": "Special Performance"}, {"pos": 8, "name": "Cris Dell oso", "pts": 28, "team": "Special Performance"}, {"pos": 9, "name": "Stig", "pts": 0, "team": "RR2"}, {"pos": 10, "name": "Facundo Cuenca", "pts": 0, "team": "RR2"}], "constructors": [{"pos": 1, "name": "Manthey Rennen RC", "pts": 224}, {"pos": 2, "name": "Turbio Works", "pts": 188}, {"pos": 3, "name": "Rigonat Racing", "pts": 140}, {"pos": 4, "name": "Special Performance", "pts": 58}, {"pos": 5, "name": "RR2", "pts": 0}], "poles": [{"pos": 1, "name": "Dani Vaquero", "count": 2}, {"pos": 2, "name": "Franco Atienza", "count": 1}], "record": {"pilot": "Dani Vaquero", "time": 15.49}, "races": [{"round": 1, "classif": [{"pilot": "Franco Atienza", "time": 18.45, "pts": 3, "pole": true}, {"pilot": "Roy Rigonat", "time": 18.58, "pts": 0, "pole": false}, {"pilot": "Juli Siricman", "time": 18.7, "pts": 0, "pole": false}, {"pilot": "Daro Gaig", "time": 19.52, "pts": 0, "pole": false}, {"pilot": "Cris Dell Oso", "time": 24.17, "pts": 0, "pole": false}, {"pilot": "Lucas Lumby", "time": 38.02, "pts": 0, "pole": false}], "s1": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Franco Atienza", "pts": 12}, {"pilot": "Cris Dell Oso", "pts": 10}], "s2": [{"pilot": "Roy Rigonat", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Lucas Lumby", "pts": 10}], "f1": [{"pilot": "Franco Atienza", "pts": 34, "dnf": false}, {"pilot": "Juli Siricman", "pts": 29, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 25, "dnf": false}], "f2": [{"pilot": "Daro Gaig", "pts": 22, "dnf": false}, {"pilot": "Lucas Lumby", "pts": 20, "dnf": false}, {"pilot": "Cris Dell Oso", "pts": 18, "dnf": false}], "f2_offset": 3, "penalties": []}, {"round": 2, "classif": [{"pilot": "Dani Vaquero", "time": 17.13, "pts": 3, "pole": true}, {"pilot": "Juli Siricman", "time": 18.54, "pts": 0, "pole": false}, {"pilot": "Franco Atienza", "time": 20.35, "pts": 0, "pole": false}, {"pilot": "Daro Gaig", "time": 23.69, "pts": 0, "pole": false}, {"pilot": "Roy Rigonat", "time": 25.41, "pts": 0, "pole": false}, {"pilot": "Oscar Fernandez", "time": 31.04, "pts": 0, "pole": false}], "s1": [{"pilot": "Dani Vaquero", "pts": 15}, {"pilot": "Franco Atienza", "pts": 12}, {"pilot": "Roy Rigonat", "pts": 10}], "s2": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Oscar Fernandez", "pts": 10}], "f1": [{"pilot": "Franco Atienza", "pts": 34, "dnf": false}, {"pilot": "Dani Vaquero", "pts": 29, "dnf": false}, {"pilot": "Juli Siricman", "pts": 25, "dnf": false}], "f2": [{"pilot": "Daro Gaig", "pts": 22, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 20, "dnf": false}, {"pilot": "Oscar Fernandez", "pts": 18, "dnf": false}], "f2_offset": 3, "penalties": [{"pilot": "Franco Atienza", "jerarquia": 4, "pts": 15, "obs": "Pruebas en pista cerrada"}]}, {"round": 3, "classif": [{"pilot": "Dani Vaquero", "time": 15.49, "pts": 3, "pole": true}, {"pilot": "Daro Gaig", "time": 15.68, "pts": 0, "pole": false}, {"pilot": "Juli Siricman", "time": 16.53, "pts": 0, "pole": false}, {"pilot": "Franco Atienza", "time": 16.74, "pts": 0, "pole": false}, {"pilot": "Roy Rigonat", "time": 17.45, "pts": 0, "pole": false}, {"pilot": "Oscar Fernandez", "time": 19.2, "pts": 0, "pole": false}], "s1": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Dani Vaquero", "pts": 12}, {"pilot": "Roy Rigonat", "pts": 10}], "s2": [{"pilot": "Franco Atienza", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Oscar Fernandez", "pts": 10}], "f1": [{"pilot": "Dani Vaquero", "pts": 34, "dnf": false}, {"pilot": "Juli Siricman", "pts": 29, "dnf": false}, {"pilot": "Daro Gaig", "pts": 25, "dnf": false}, {"pilot": "Franco Atienza", "pts": 0, "dnf": true}], "f2": [{"pilot": "Oscar Fernandez", "pts": 22, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 0, "dnf": true}], "f2_offset": 3, "penalties": [{"pilot": "Oscar Ferenandez", "jerarquia": 1, "pts": 45, "obs": "Vehiculo fuera de reglamento"}]}], "teamColors": {"Turbio Works": {"bg": "#FF00FF", "text": "#000"}, "Special Performance": {"bg": "#C8C8C8", "text": "#000"}, "Rigonat Racing": {"bg": "#666666", "text": "#fff"}, "RR2": {"bg": "#111111", "text": "#fff"}, "Manthey Rennen RC": {"bg": "#FF9900", "text": "#000"}}};
+const D={"standings": [{"pos": 1, "name": "Juli Siricman", "pts": 128, "team": "Manthey Rennen RC"}, {"pos": 2, "name": "Daro Gaig", "pts": 105, "team": "Turbio Works"}, {"pos": 3, "name": "Dani Vaquero", "pts": 96, "team": "Manthey Rennen RC"}, {"pos": 4, "name": "Franco Atienza", "pts": 95, "team": "Turbio Works"}, {"pos": 5, "name": "Roy Rigonat", "pts": 80, "team": "Rigonat Racing"}, {"pos": 6, "name": "Lucas Lumby", "pts": 30, "team": "Special Performance"}, {"pos": 7, "name": "Cris Dell oso", "pts": 28, "team": "Special Performance"}, {"pos": 8, "name": "Oscar Fernandez", "pts": 15, "team": "Rigonat Racing"}, {"pos": 9, "name": "Stig", "pts": 0, "team": "RR2"}, {"pos": 10, "name": "Facundo Cuenca", "pts": 0, "team": "RR2"}], "constructors": [{"pos": 1, "name": "Manthey Rennen RC", "pts": 224}, {"pos": 2, "name": "Turbio Works", "pts": 200}, {"pos": 3, "name": "Rigonat Racing", "pts": 95}, {"pos": 4, "name": "Special Performance", "pts": 58}, {"pos": 5, "name": "RR2", "pts": 0}], "poles": [{"pos": 1, "name": "Dani Vaquero", "count": 2}, {"pos": 2, "name": "Franco Atienza", "count": 1}], "record": {"pilot": "Dani Vaquero", "time": 15.49}, "races": [{"round": 1, "classif": [{"pilot": "Franco Atienza", "time": 18.45, "pts": 3, "pole": true}, {"pilot": "Roy Rigonat", "time": 18.58, "pts": 0, "pole": false}, {"pilot": "Juli Siricman", "time": 18.7, "pts": 0, "pole": false}, {"pilot": "Daro Gaig", "time": 19.52, "pts": 0, "pole": false}, {"pilot": "Cris Dell Oso", "time": 24.17, "pts": 0, "pole": false}, {"pilot": "Lucas Lumby", "time": 38.02, "pts": 0, "pole": false}], "s1": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Franco Atienza", "pts": 12}, {"pilot": "Cris Dell Oso", "pts": 10}], "s2": [{"pilot": "Roy Rigonat", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Lucas Lumby", "pts": 10}], "f1": [{"pilot": "Franco Atienza", "pts": 34, "dnf": false}, {"pilot": "Juli Siricman", "pts": 29, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 25, "dnf": false}], "f2": [{"pilot": "Daro Gaig", "pts": 22, "dnf": false}, {"pilot": "Lucas Lumby", "pts": 20, "dnf": false}, {"pilot": "Cris Dell Oso", "pts": 18, "dnf": false}], "f2_offset": 3, "penalties": []}, {"round": 2, "classif": [{"pilot": "Dani Vaquero", "time": 17.13, "pts": 3, "pole": true}, {"pilot": "Juli Siricman", "time": 18.54, "pts": 0, "pole": false}, {"pilot": "Franco Atienza", "time": 20.35, "pts": 0, "pole": false}, {"pilot": "Daro Gaig", "time": 23.69, "pts": 0, "pole": false}, {"pilot": "Roy Rigonat", "time": 25.41, "pts": 0, "pole": false}, {"pilot": "Oscar Fernandez", "time": 31.04, "pts": 0, "pole": false}], "s1": [{"pilot": "Dani Vaquero", "pts": 15}, {"pilot": "Franco Atienza", "pts": 12}, {"pilot": "Roy Rigonat", "pts": 10}], "s2": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Oscar Fernandez", "pts": 10}], "f1": [{"pilot": "Franco Atienza", "pts": 34, "dnf": false}, {"pilot": "Dani Vaquero", "pts": 29, "dnf": false}, {"pilot": "Juli Siricman", "pts": 25, "dnf": false}], "f2": [{"pilot": "Daro Gaig", "pts": 22, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 20, "dnf": false}, {"pilot": "Oscar Fernandez", "pts": 18, "dnf": false}], "f2_offset": 3, "penalties": [{"pilot": "Franco Atienza", "pts": 15, "obs": "Pruebas en pista cerrada"}]}, {"round": 3, "classif": [{"pilot": "Dani Vaquero", "time": 15.49, "pts": 3, "pole": true}, {"pilot": "Daro Gaig", "time": 15.68, "pts": 0, "pole": false}, {"pilot": "Juli Siricman", "time": 16.53, "pts": 0, "pole": false}, {"pilot": "Franco Atienza", "time": 16.74, "pts": 0, "pole": false}, {"pilot": "Roy Rigonat", "time": 17.45, "pts": 0, "pole": false}, {"pilot": "Oscar Fernandez", "time": 19.2, "pts": 0, "pole": false}], "s1": [{"pilot": "Juli Siricman", "pts": 15}, {"pilot": "Dani Vaquero", "pts": 12}, {"pilot": "Roy Rigonat", "pts": 10}], "s2": [{"pilot": "Franco Atienza", "pts": 15}, {"pilot": "Daro Gaig", "pts": 12}, {"pilot": "Oscar Fernandez", "pts": 10}], "f1": [{"pilot": "Dani Vaquero", "pts": 34, "dnf": false}, {"pilot": "Juli Siricman", "pts": 29, "dnf": false}, {"pilot": "Daro Gaig", "pts": 25, "dnf": false}, {"pilot": "Franco Atienza", "pts": 0, "dnf": true}], "f2": [{"pilot": "Oscar Fernandez", "pts": 22, "dnf": false}, {"pilot": "Roy Rigonat", "pts": 0, "dnf": true}], "f2_offset": 3, "penalties": [{"pilot": "Oscar Fernandez", "pts": 45, "obs": "Vehiculo fuera de reglamento"}]}], "teamColors": {"Turbio Works": {"bg": "#FF00FF", "text": "#000"}, "Special Performance": {"bg": "#C8C8C8", "text": "#000"}, "Rigonat Racing": {"bg": "#666666", "text": "#fff"}, "RR2": {"bg": "#111111", "text": "#fff"}, "Manthey Rennen RC": {"bg": "#FF9900", "text": "#000"}}};
 const TC=D.teamColors,tc=t=>TC[t]?TC[t].bg:'#444',pc=p=>p===1?'g':p===2?'s':p===3?'b':'dim';
 function show(id,btn){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));document.getElementById(id).classList.add('on');btn.classList.add('on')}
-// Standings
 document.getElementById('sc').innerHTML='<div class="ch"><span class="cht">Campeonato de Pilotos</span><span class="chb">Fecha '+D.races.length+' / 17</span></div>'+D.standings.map(d=>'<div class="dr"><div class="pn '+pc(d.pos)+'">'+d.pos+'</div><div class="dot" style="background:'+tc(d.team)+'"></div><div class="di"><div class="dn">'+d.name+'</div><div class="dteam">'+d.team+'</div></div><div class="dpts">'+d.pts+'<small>pts</small></div></div>').join('');
-// Constructors
 const mx=D.constructors[0].pts||1;
 document.getElementById('cc').innerHTML='<div class="ch"><span class="cht">Campeonato de Constructores</span><span class="chb">Fecha '+D.races.length+' / 17</span></div>'+D.constructors.map(d=>'<div class="tr"><div class="tbar" style="background:'+tc(d.name)+'"></div><div class="tnw"><div class="tn">'+d.name+'</div><div class="tpw"><div class="tp" style="width:'+Math.round(d.pts/mx*100)+'%;background:'+tc(d.name)+'"></div></div></div><div class="tpts">'+d.pts+'<small>pts</small></div></div>').join('');
-// Races
 let ar=D.races.length-1;
 function brs(){document.getElementById('rs').innerHTML=D.races.map((r,i)=>'<button class="chip'+(i===ar?' on':'')+'" onclick="sr('+i+')">Fecha '+r.round+'</button>').join('')}
 function sr(i){ar=i;document.querySelectorAll('.chip').forEach((c,j)=>c.classList.toggle('on',j===i));brc()}
-function mkSeg(lbl,pen){return '<div class="seg'+(pen?' pen':'')+'">'+lbl+'</div>'}
-function mkRow(pos,name,extra,right,isDNF,isPen){
-  const pc2=isDNF?'dim':pc(pos);
-  const posStr=isDNF?'—':pos;
-  return '<div class="rr'+(isPen?' penrow':'')+'"><div class="rpos '+pc2+'">'+posStr+'</div><div class="rn">'+name+(extra||'')+'</div>'+(right?right:'')+'</div>';
-}
 function brc(){
   const race=D.races[ar];
   let h='<div class="ch"><span class="cht">Fecha '+race.round+'</span><span class="chb">'+race.classif.length+' pilotos</span></div>';
-  // Clasificacion
-  h+=mkSeg('Clasificación');
-  race.classif.forEach((c,i)=>{
-    const ptsTag=c.pts?'<div class="rpt" style="color:var(--gold)">+'+c.pts+'</div>':'';
-    const poleTag=c.pole?'<span class="pole-tag">POLE</span>':'';
-    h+=mkRow(i+1,c.pilot,poleTag,'<div class="rt">'+(c.time?c.time.toFixed(2)+'s':'')+'</div>'+ptsTag,false,false);
-  });
-  // Series
-  if(race.s1.length){
-    h+=mkSeg('Resultado S1');
-    race.s1.forEach((x,i)=>{h+=mkRow(i+1,x.pilot,'','<div class="rpt">'+x.pts+' pts</div>',false,false)});
-  }
-  if(race.s2.length){
-    h+=mkSeg('Resultado S2');
-    race.s2.forEach((x,i)=>{h+=mkRow(i+1,x.pilot,'','<div class="rpt">'+x.pts+' pts</div>',false,false)});
-  }
-  // Finals — F1 and F2 share global position numbering
-  // F1: positions 1..n, then DNF at end
-  // F2: positions start at F1_finished_count+1, then DNF
+  h+='<div class="seg">Clasificación</div>';
+  race.classif.forEach((c,i)=>{h+='<div class="rr"><div class="rpos '+pc(i+1)+'">'+(i+1)+'</div><div class="rn">'+c.pilot+(c.pole?'<span class="pole-tag">POLE</span>':'')+'</div><div class="rt">'+(c.time?c.time.toFixed(2)+'s':'')+'</div>'+(c.pts?'<div class="rpt" style="color:var(--gold)">+'+c.pts+'</div>':'')+'</div>'});
+  if(race.s1.length){h+='<div class="seg">Resultado S1</div>';race.s1.forEach((x,i)=>{h+='<div class="rr"><div class="rpos '+pc(i+1)+'">'+(i+1)+'</div><div class="rn">'+x.pilot+'</div><div class="rpt">'+x.pts+' pts</div></div>'})}
+  if(race.s2.length){h+='<div class="seg">Resultado S2</div>';race.s2.forEach((x,i)=>{h+='<div class="rr"><div class="rpos '+pc(i+1)+'">'+(i+1)+'</div><div class="rn">'+x.pilot+'</div><div class="rpt">'+x.pts+' pts</div></div>'})}
   if(race.f1.length){
-    h+=mkSeg('Final 1');
-    let f1pos=1; const f1fin=race.f1.filter(x=>!x.dnf).length;
-    race.f1.forEach(x=>{
-      const pos=x.dnf?null:f1pos++;
-      const dnfTag=x.dnf?'<span class="dnf-tag">DNF</span>':'';
-      const ptsTag=(!x.dnf&&x.pts)?'<div class="rpt">'+x.pts+' pts</div>':'';
-      h+=mkRow(pos||99,x.pilot,dnfTag,ptsTag,x.dnf,false);
-    });
+    h+='<div class="seg">Final 1</div>';
+    let p=1;
+    race.f1.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
   }
   if(race.f2.length){
-    h+=mkSeg('Final 2');
-    let f2pos=race.f2_offset+1;
-    race.f2.forEach(x=>{
-      const pos=x.dnf?null:f2pos++;
-      const dnfTag=x.dnf?'<span class="dnf-tag">DNF</span>':'';
-      const ptsTag=(!x.dnf&&x.pts)?'<div class="rpt">'+x.pts+' pts</div>':'';
-      h+=mkRow(pos||99,x.pilot,dnfTag,ptsTag,x.dnf,false);
-    });
+    h+='<div class="seg">Final 2</div>';
+    let p=race.f2_offset+1;
+    race.f2.forEach(x=>{const pos=x.dnf?null:p++;h+='<div class="rr"><div class="rpos '+(x.dnf?'dim':pc(pos))+'">'+(x.dnf?'—':pos)+'</div><div class="rn">'+x.pilot+(x.dnf?'<span class="dnf-tag">DNF</span>':'')+'</div>'+(x.pts?'<div class="rpt">'+x.pts+' pts</div>':'')+'</div>'})
   }
-  // Penalizaciones
-  if(race.penalties&&race.penalties.length){
-    h+=mkSeg('⚑  Penalización','pen');
-    race.penalties.forEach(p=>{
-      h+='<div class="rr penrow"><div class="rpos dim">⚑</div><div class="di"><div class="rn">'+p.pilot+'<span class="pen-tag">-'+p.pts+' pts</span></div><span class="pen-obs">'+p.obs+'</span></div></div>';
-    });
-  }
+  if(race.penalties&&race.penalties.length){h+='<div class="seg pen">⚑  Penalización</div>';race.penalties.forEach(p=>{h+='<div class="rr penrow"><div class="rpos dim">⚑</div><div class="di"><div class="rn">'+p.pilot+'<span class="pen-tag">-'+p.pts+' pts</span></div><span class="pen-obs">'+p.obs+'</span></div></div>'})}
   document.getElementById('rc').innerHTML=h;
 }
 brs();brc();
-// Stats
 const ldr=D.standings[0];
 document.getElementById('sg').innerHTML='<div class="stile rec"><div class="slbl">Record de pista</div><div class="sv rec">'+(D.record.time?D.record.time.toFixed(2):'—')+'<span style="font-size:13px;color:var(--orange)">s</span></div><div class="ssub">'+(D.record.pilot||'—')+'</div></div><div class="stile"><div class="slbl">Líder</div><div class="sv" style="font-size:19px">'+ldr.name.split(' ')[0]+'</div><div class="ssub">'+ldr.pts+' pts · '+ldr.team+'</div></div><div class="stile"><div class="slbl">Fechas</div><div class="sv">'+D.races.length+'<span style="font-size:13px;color:var(--text3)">/17</span></div><div class="ssub">Disputadas</div></div><div class="stile"><div class="slbl">Poles</div><div class="sv">'+D.poles.reduce((a,p)=>a+p.count,0)+'</div><div class="ssub">'+D.poles.length+' pilotos</div></div>';
 document.getElementById('pc').innerHTML='<div class="ch"><span class="cht">Pole Positions</span></div>'+D.poles.map((p,i)=>'<div class="dr"><div class="pn '+pc(i+1)+'">'+p.pos+'</div><div class="di"><div class="dn">'+p.name+'</div></div><div style="display:flex;align-items:center;gap:3px">'+'<span style="color:var(--gold);font-size:15px">★</span>'.repeat(p.count)+'<span style="font-family:Barlow Condensed,sans-serif;font-weight:800;font-size:22px;margin-left:3px">'+p.count+'</span></div></div>').join('');
-// About
 document.getElementById('ac').innerHTML='<div class="arow"><span>Temporada</span><span>2026</span></div><div class="arow"><span>Escala</span><span>1/43</span></div><div class="arow"><span>Fechas totales</span><span>17</span></div><div class="arow"><span>Disputadas</span><span>'+D.races.length+'</span></div><div class="arow"><span>Pilotos</span><span>'+D.standings.length+'</span></div><div class="arow"><span>Equipos</span><span>'+D.constructors.length+'</span></div><div class="arow"><span>Líder</span><span>'+ldr.name+'</span></div><div class="arow"><span>Record de pista</span><span>'+(D.record.time?D.record.time.toFixed(2)+'s — '+D.record.pilot:'—')+'</span></div>';
 </script>
 </body>
